@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<script type="module" src="script.js"></script>
+		<title>Welcome to CyberPrint</title>
+		<!--Link logo-->
+		<link rel="icon" href="logo..link" type="image/x-icon">
+	</head>
+
+	<body>
+		<nav>
+			{{^private}}
+				<a class="signup" href="signup">Signup</a>
+				<a class="log" href="login">Login</a>
+			{{/private}}
+			{{#private}}
+				<a href="account"><img src="{{avatar}}"></a>
+				<a class="log" onclick="logout()">LOGOUT</a>
+			{{/private}}
+			<a href="game-on">Game On</a>
+			<a href="digital-citizenship">Digital Citizenship</a>
+			<a href="digital-footprint">Digital Footprint</a>
+			<a href="index">Home</a>
+			<h3>cyberprint</h3>
+		</nav>
+
+		<header>
+			<h1>Home</h1>
+		</header>
+		<main>
+
+			<div class="definition">
+				<h1>dig·i·tal a·ware·ness</h1>
+				<p>/ˈdijidl əˈwernəs/</p>
+				<p><i>noun</i></p>
+				<p class="definition">"the knowledge, skills and attitudes required for individuals to use digital tools effectively."</p>
+			</div>
+			<h1>Our Mission</h1>
+			<div class="mission">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur consequat risus, vitae fermentum neque vestibulum sit amet. Etiam nec rutrum ipsum. Curabitur posuere tristique lobortis. Duis lacus urna, vulputate vitae ligula accumsan, maximus fringilla tortor. Aliquam mauris nisi, consequat id cursus vulputate, scelerisque ultricies arcu. Morbi egestas porttitor feugiat. Nullam a enim rhoncus, dignissim metus id, congue dolor. Etiam eu tellus non ante efficitur placerat ac vitae nisl. Maecenas rhoncus accumsan cursus.</p>
+			</div>
+			<a class="gotogame" href="game-on">GAME ON</a>
+			<div class="team">
+				<h1>About the Team</h1>
+				<div class="memberone">
+					<img class="left" src="banner.png">
+					<h1>Team Member #1</h1>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur consequat risus, vitae fermentum neque vestibulum sit amet. Etiam nec rutrum ipsum. Curabitur posuere tristique lobortis.
+				</div>
+				<div class="membertwo">
+					<img class="right" src="banner.png">
+					<h1>Team Member #2</h1>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur consequat risus, vitae fermentum neque vestibulum sit amet. Etiam nec rutrum ipsum. Curabitur posuere tristique lobortis.
+				</div>
+				<div class="memberone">
+					<img class="left" src="banner.png">
+					<h1>Team Member #3</h1>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur consequat risus, vitae fermentum neque vestibulum sit amet. Etiam nec rutrum ipsum. Curabitur posuere tristique lobortis.
+				</div>
+				<div class="membertwo">
+					<img class="right" src="banner.png">
+					<h1>Team Member #4</h1>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur consequat risus, vitae fermentum neque vestibulum sit amet. Etiam nec rutrum ipsum. Curabitur posuere tristique lobortis.
+				</div>
+			</div>
+			<div class="contact">
+				<h1>Contact Us</h1>
+				<p>Have any questions? Feel free to contact us with any questions you have to get in touch!</p>
+				<br><br>
+				<form method="POST" action="https://formspree.io/f/xyylbkyd">
+					<input type="hidden" name="_subject" value="Contact request from personal website" />
+					<input type="email" name="_replyto" placeholder="Your email" required>
+					<textarea name="message" placeholder="Your message" required></textarea>
+					<button type="submit">Submit</button>
+				</form>
+			</div>
+		</main>
+		<footer>
+			© 2021 The Digiwalkers
+		</footer>
+	</body>
+
+</html>
